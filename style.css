@@ -1,0 +1,301 @@
+/* Navbar Styling */
+body{
+  margin: 0;  /* Removes default margin */
+  height: 100vh;  /* Ensure the body covers full viewport height */
+  background-attachment: fixed;
+  background-size: cover;  /* Ensures the image covers the entire body */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat;
+    background-image: url(close-up-old-abandoned-house-village.jpg) ;
+}
+
+.navbar {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: rgba(0, 0, 0, 0.8); /* Navbar Background */
+    color: white;
+    margin-bottom: 12px;
+  }
+  
+  /* Logo on the left */
+  .logo img {
+    width: 150px; /* Adjust width as needed */
+    height: 5rem; /* Maintain aspect ratio */
+    display: block;
+  }
+  
+  
+  /* Navbar Links */
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Menu list */
+  #menulist {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #menulist li {
+    margin: 0 15px;
+  }
+  
+  #menulist a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  #menulist a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Search Container */
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .search-container input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .search-container button {
+    background-color: #f8c74a;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 2rem;
+  }
+  
+  .search-container button i {
+    color: #333;
+  }
+  
+  /* Hamburger Menu (for Mobile) */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media screen and (max-width: 480px) {
+    /* Navbar Links collapse into hamburger */
+    #menulist {
+      display: none; /* Hide the menu items */
+      position: absolute;
+      top: 5rem;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      width: 100%;
+      text-align: center;
+    }
+  
+    #menulist li {
+      margin: 1rem 0;
+    }
+  
+    #menulist.active {
+      display: flex; /* Show the menu items when active */
+      flex-direction: column;
+    }
+  
+    /* Hamburger icon styling */
+    .hamburger {
+      display: block;
+      font-size: 2rem;
+      color: white;
+    }
+  
+    .hamburger i {
+      color: white;
+    }
+  }
+
+
+
+
+  /* Make sure navbar elements are on the right */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Mobile view changes the search and hamburger layout */
+  .search-container {
+    margin-left: 10px;
+    display: flex;
+  }
+  .properties {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }  
+  .properties .propertyCard {
+
+    width: calc(25.2% - 1rem);
+    height: auto;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    border: 1px solid #a1a1aa;
+    padding: 0.5rem;
+   background-color: #fff;
+  color: white; /* Background blur */
+  box-shadow: 5px 5px 16px 0px black;
+  }
+  .properties .propertyCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.2rem;
+    margin: 0 0 1rem 0;
+  }    
+  .properties .propertyCard h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+  }  
+  .properties .propertyCard p {
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem 0;
+    color: black;
+  }
+  .propertyCard:hover {
+    transform: scale(1.05);
+  }  
+  .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5rem 0 0 0;
+    border-top: 1px solid #a1a1aa;
+  }  
+  .price p {
+    font-size: 1.5rem !important;
+  }  
+  .price button {
+    padding: 0.5rem;
+    background-color:rgb(236, 157, 8);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+  }  
+  footer{
+    background-color: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "open Sans";
+    padding-top: 40px;
+    color: #fff;
+    margin-top: 19px;
+
+}
+.footer-content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1,1rem;
+    transition: color .4s ease;
+}
+#facebook  :hover {
+   color: blue;
+}
+#instagram :hover{
+  color: rgba(202, 77, 27, 0.829);
+}
+#youtube :hover{
+  color: red;
+}
+#linkedin :hover{
+ color: rgba(38, 38, 228, 0.938);
+}
+#email :hover{
+  color: red;
+}
+.footer-bottom{
+    background-color: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+    
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+/* Media Query for Tablets and Smaller Screens */
+@media screen and (max-width: 1024px) {
+    .properties .propertyCard {
+      width: calc(33.33% - 1rem);  /* 3 items per row on tablet size */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .properties .propertyCard {
+      width: calc(50% - 1rem);  /* 2 items per row on smaller tablets */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .properties .propertyCard {
+      width: calc(100% - 1rem);  /* 1 item per row on mobile screens */
+    }
+  }
+  .properties .propertyCard video{
+    width: 100%;
+  }
