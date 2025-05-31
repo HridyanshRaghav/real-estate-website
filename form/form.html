@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apply for Property</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Apply for Property</h2>
+  
+  <form id="applyForm" action="https://formsubmit.co/hridyanshraghav19@gmail.com" method="POST">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="Name" required />
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="Phone Number" required pattern="[0-9]{10}" />
+
+    <label for="whatsapp">WhatsApp Number:</label>
+    <input type="tel" id="whatsapp" name="WhatsApp Number" required pattern="[0-9]{10}" />
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="Email" required />
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="Address" rows="3" required></textarea>
+
+    <!-- Optional hidden input for redirect or customization -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
